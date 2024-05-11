@@ -18,6 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(builder =>
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 builder.Services.AddMediatR(cfg =>
 {
